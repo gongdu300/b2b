@@ -38,3 +38,25 @@ SmartInventory는 B2B 고객의 제품 수요 데이터를 기반으로
 ---
 
 ## 🧠 구조
+project_root/
+├── gemini # gemini 번역 모듈
+├───── init.py
+├───── config.py # 환경설정 (DB, API key 등)
+├───── translator.py # Gemini 번역 모듈
+├───── utils.py # 캐시 및 문자열 처리 함수
+├── test_csv_bundle # 업로드 테스트 데이터셋 폴더
+├── main.py # FastAPI 백엔드 진입점
+├── index.html # 프론트엔드 UI
+├── script.js # 프론트 로직 (Fetch + Chart.js)
+├── style.css # 프론트 디자인
+├── .env # 환경변수 (DB, Gemini key)
+├── requirements.txt # 패키지 설치
+└── README.md
+
+## 🚀 실행 방법
+### 1️⃣ 가상환경 및 패키지 설치
+```bash
+conda create -n smartinventory python=3.10
+conda activate smartinventory
+pip install -r requirements.txt
+uvicorn main:app
