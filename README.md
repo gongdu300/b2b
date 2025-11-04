@@ -38,6 +38,7 @@ SmartInventory는 B2B 고객의 제품 수요 데이터를 기반으로
 ---
 
 ## 🧠 구조
+```
 project_root/
 ├── gemini/ # Gemini 번역 모듈
 │ ├── init.py
@@ -53,6 +54,7 @@ project_root/
 ├── .env # 환경변수 (DB, Gemini key)
 ├── requirements.txt # 패키지 설치 목록
 └── README.md
+```
 
 ## 🚀 실행 방법
 ### 1️⃣ 가상환경 및 패키지 설치
