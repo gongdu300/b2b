@@ -62,4 +62,22 @@ project_root/
 conda create -n smartinventory python=3.10
 conda activate smartinventory
 pip install -r requirements.txt
+```
+
+### 2️⃣ 환경 변수 설정 (.env)
+.env 파일 내용 예시:
+
+DB_USER=root
+DB_PASS=1234
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_NAME=data_platform
+
+GEMINI_API_KEY=AIzaSyDxxxxxxxxxxxxxxxx
+GEMINI_MODEL_VERSION=gemini-2.5-flash
+HTTP_TIMEOUT=20
+TRANSLATE_HEADERS=true
+TRANSLATE_TABLE_NAME=true
+
+### 3️⃣ 서버 실행
 uvicorn main:app
