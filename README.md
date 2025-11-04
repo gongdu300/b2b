@@ -65,6 +65,7 @@ pip install -r requirements.txt
 ```
 
 ### 2️⃣ 환경 변수 설정 (.env)
+```bash
 .env 파일 내용 예시:
 
 DB_USER=root
@@ -78,6 +79,9 @@ GEMINI_MODEL_VERSION=gemini-2.5-flash
 HTTP_TIMEOUT=20
 TRANSLATE_HEADERS=true
 TRANSLATE_TABLE_NAME=true
+```
 
 ### 3️⃣ 서버 실행
+```bash
 uvicorn main:app
+```
