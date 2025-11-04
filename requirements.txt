@@ -1,0 +1,21 @@
+# --- Core web stack (Pydantic v2 호환) ---
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.9
+
+# --- Config / HTTP ---
+python-dotenv>=1.0,<2
+requests>=2.31,<3
+
+# --- Data & DB ---
+SQLAlchemy>=2.0,<3
+PyMySQL>=1.1,<2
+
+# --- Optional: Gemini client (현재는 requests로도 충분)
+google-generativeai>=0.7,<1
+
+# --- Utils (원하면 사용)
+Unidecode>=1.3,<2
+
+prophet
+scikit-learn
